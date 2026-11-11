@@ -1,0 +1,660 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Kaisei Decol", sans-serif;
+  line-height: 1.7;
+  color: rgb(0, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* レイアウト */
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.align-center {
+  text-align: center;
+}
+
+/* 見出し */
+.font-english {
+  font-family: "Kaisei Decol", sans-serif;
+  font-weight: normal;
+}
+.page-title,
+.heading-large,
+.heading-medium {
+  font-size: 3rem;
+  text-align: center;
+}
+.page-title {
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+.heading-large {
+  margin-bottom: 1rem;
+}
+.page-title {
+  font-family: "Kaisei Decol", sans-serif;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #77d6ff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #77d6ff;
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+
+/* ヘッダー
+------------------------------- */
+.page-header {
+  padding-top: 0.5rem;
+}
+.logo {
+  width: 210px;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  list-style: none;
+}
+.main-nav a {
+  color: rgb(0, 0, 0);
+}
+.main-nav a:hover {
+  color: rgb(175, 234, 255);
+}
+
+/* ヘッダーカバー画像
+------------------------------- */
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 800px;
+}
+.sub-cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 528px;
+  margin-bottom: 4rem;
+}
+
+/* HOME
+------------------------------- */
+.cover-home {
+  background-image: url(../images/cover-home-s.webp);
+}
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+}
+.about p {
+  margin-bottom: 3rem;
+}
+
+/* NEWS
+------------------------------- */
+.cover-news {
+  background-image: url(../images/cover-news-s.webp);
+}
+
+/* 記事部分 */
+.post {
+  margin-bottom: 3rem;
+}
+.post-title {
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+}
+.post-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.post-cat {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+.post-cat a {
+  color: rgb(0, 0, 0);
+  background-color: #faf7f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+.post-cat a:hover {
+  background-color: #c9c2bc;
+}
+.post-date {
+  font-size: 0.875rem;
+}
+.post-thumbnail {
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+.post p {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+/* サイドバー */
+.side-menu {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.side-menu li {
+  border-bottom: 1px solid #c9c2bc;
+}
+.side-menu a {
+  color: rgb(205, 236, 255);
+  display: block;
+  padding: 1rem;
+}
+.side-menu a:hover {
+  color: #77d6ff;
+}
+
+/* MENU
+------------------------------- */
+.cover-menu {
+  background-image: url(../images/cover-menu-s.webp);
+}
+.grid {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.item p {
+  font-size: 0.875rem;
+}
+
+/* CONTACT
+------------------------------- */
+.cover-contact {
+  background-image: url(../images/cover-contact-s.webp);
+}
+
+/* 店舗情報 */
+.location {
+  margin-bottom: 3.5rem;
+}
+.location-info {
+  margin-bottom: 2rem;
+}
+.location-info .info {
+  padding: 0;
+}
+
+/* お問い合わせ */
+.email {
+  max-width: 916px;
+  background-color: #faf7f0;
+  border-radius: 48px;
+  padding: 1.5rem 2.5rem 2.5rem;
+  margin: 0 auto 2rem;
+}
+.email p {
+  margin: 1rem 0 2rem;
+}
+
+/* SNS */
+.sns-item {
+  margin-bottom: 2rem;
+}
+.sns-item .heading-medium {
+  margin-bottom: 0.5rem;
+}
+.sns-youtube {
+  aspect-ratio: 16/9;
+}
+.sns-youtube iframe {
+  height: 100%;
+}
+
+/* フッター
+------------------------------- */
+.page-footer {
+  background-image: url(../images/footer-s.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 12rem;
+}
+.info {
+  width: 100%;
+  max-width: 544px;
+  margin: auto;
+  padding: 0 1.5rem;
+  border-spacing: 0;
+}
+.info th,
+.info td {
+  border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem;
+}
+.info td {
+  padding: 1rem 0;
+}
+.copyright {
+  background-color: rgb(141, 211, 255);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 6rem;
+  color: #fff;
+}
+
+/* デスクトップ版
+------------------------------- */
+@media (min-width: 800px) {
+  /* 見出し */
+  .page-title {
+    font-size: 5rem;
+  }
+  .heading-large {
+    font-size: 4rem;
+  }
+  .post-title {
+    font-size: 2rem;
+  }
+
+  /* ヘッダー */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .main-nav {
+    font-size: 1.5rem;
+  }
+
+  /* ヘッダーカバー画像 */
+  .sub-cover {
+    height: 400px;
+    margin-bottom: 6rem;
+  }
+
+  /* HOME */
+  .cover-home {
+    background-image: url(../images/cover-home-l.webp);
+  }
+  .about {
+    margin: 4rem auto 0;
+  }
+
+  /* NEWS */
+  .cover-news {
+    background-image: url(../images/cover-news-l.webp);
+  }
+  .news-contents {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post {
+    width: 70%;
+  }
+  .sidebar {
+    width: 22%;
+  }
+  .sidebar .heading-medium {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  /* MENU */
+  .cover-menu {
+    background-image: url(../images/cover-menu-l.webp);
+  }
+  .grid {
+    gap: 3rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .item img {
+    margin-bottom: 0.5rem;
+  }
+  .item p {
+    font-size: 1rem;
+  }
+
+  /* CONTACT */
+  .cover-contact {
+    background-image: url(../images/cover-contact-l.webp);
+  }
+  .location {
+    display: flex;
+    gap: 2rem;
+  }
+  .location-info {
+    width: 32%;
+  }
+  .location-info .info th {
+    padding-left: 2rem;
+  }
+  .location-map {
+    width: 64%;
+  }
+  .email {
+    margin-bottom: 4rem;
+  }
+  .sns {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+  .sns-item {
+    flex: 1;
+  }
+
+  /* フッター */
+  .page-footer {
+    background-image: url(../images/footer-l.webp);
+    padding-top: 12rem;
+  }
+  .info th {
+    padding-left: 2.5rem;
+  }
+}
+
+.photo-section {
+  margin-top: -500px; /* 上の空間をギュッと詰める（マイナスや小さめの数値でお好み調整） */
+  margin-bottom: 50px; /* 写真の下に適度な余白を作る */
+}
+/* 「サンプルを見る」ボタンの上に空間を作る */
+.about .align-center {
+  margin-top: 40px; /* 数値はお好みで調整してください（例: 30px〜50pxなど） */
+}
+.sample-text {
+  font-family: "Kaisei Decol", serif;
+}
+
+/* ----------------------------------
+   YouTube レスポンシブ横並び設定
+---------------------------------- */
+.sns {
+  margin-bottom: 60px;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* 動画どうしのすき間 */
+}
+
+.video-item {
+  flex: 1 1 calc(50% - 10px); /* 画面半分からすき間分を引いた幅 */
+  min-width: 300px; /* 幅が狭くなったら縦並びに切替 */
+  position: relative;
+  padding-top: 28.125%; /* 16:9比率を保つ設定（56.25% ÷ 2） */
+}
+
+/* PC等で1つの場合の高さ計算調整 */
+@media (max-width: 660px) {
+  .video-item {
+    padding-top: 56.25%; /* 縦並び時は通常の16:9 */
+  }
+}
+
+.video-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------------------
+   ポートフォリオ セクション設定
+---------------------------------- */
+.portfolio-section {
+  margin-bottom: 60px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-card {
+  flex: 1 1 calc(50% - 15px); /* 横に2列並べる設定 */
+  min-width: 280px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.portfolio-card .card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-card .card-content {
+  padding: 15px;
+}
+/* 動画カード用のレスポンシブ埋め込み設定 */
+.card-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10; /* 画像カードと縦横比を揃える */
+}
+
+.card-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.main-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.post {
+  width: 70%;
+}
+.sidebar {
+  width: 22%;
+}
+.sidebar.heading-medium {
+  line-height: 1;
+  margin-left: 1rem;
+}
+/* ===== 全ページ共通：スマホで左寄り・はみ出しを防ぐ ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 799px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info th,
+  .info td {
+    word-break: break-word;
+  }
+}
+/* スマホ：PC用の横並び・幅指定を無効にする */
+@media (max-width: 799px) {
+  .main-contents {
+    display: block;
+  }
+  .post,
+  .sidebar {
+    width: 100%;
+  }
+}
+/* スマホ：文字を小さくする */
+@media (max-width: 799px) {
+  /* 見出し（今は3rem） */
+  .page-title,
+  .heading-large,
+  .heading-medium {
+    font-size: 2rem;
+  }
+
+  /* メニュー（今は1.5rem） */
+  .main-nav {
+    font-size: 1.1rem;
+    gap: 1.2rem;
+  }
+
+  /* ボタン（今は1.5rem） */
+  .btn {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* 本文 */
+  body {
+    font-size: 0.9rem;
+  }
+
+  /* 記事タイトル */
+  .post-title {
+    font-size: 1.3rem;
+  }
+}
+/* ポートフォリオ：PCもスマホも2列にそろえる */
+.main-contents > .portfolio-section {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.portfolio-card {
+  flex: 0 0 calc(50% - 15px); /* 奇数枚でも最後の1枚が伸びない */
+  min-width: 0;
+}
+/* 画像の縦横比がばらばらでも、枠をそろえて見た目をすっきりさせる */
+.portfolio-card .card-image img {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background-color: #fafafa;
+}
+
+/* スマホ：2列のまま小さく収める */
+@media (max-width: 799px) {
+  .portfolio-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio-grid {
+    gap: 12px;
+  }
+  .portfolio-card {
+    flex: 0 0 calc(50% - 6px);
+  }
+  .portfolio-card .card-content {
+    padding: 8px;
+  }
+  .portfolio-card .category {
+    font-size: 0.7rem;
+  }
+  .portfolio-card .title {
+    font-size: 0.85rem;
+  }
+}
+/* ===== 画像の拡大表示 ===== */
+.portfolio-card .card-image img[src]:not([src=""]) {
+  cursor: zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: zoom-out;
+}
+.lightbox[hidden] {
+  display: none;
+}
+.lightbox-img {
+  max-width: 100%;
+  max-height: calc(100vh - 2rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 2rem;
+  line-height: 1;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+body.lightbox-open {
+  overflow: hidden;
+}
