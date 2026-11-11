@@ -658,3 +658,9 @@ img {
 body.lightbox-open {
   overflow: hidden;
 }
+/* NEWSページ：ヘッダーを低くして、記事を上に寄せる */
+.sub-cover.cover-news {
+  height: auto;          /* 固定の高さをやめる */
+  padding-bottom: 1rem;  /* 「News」の下の余白（小さくしたいなら 0 に） */
+  margin-bottom: 1.5rem; /* ヘッダーと記事の間（さらに詰めたいなら 0.5rem など） */
+}
